@@ -58,15 +58,15 @@ function game() {
         console.log("player: " + playerSelection);
         console.log("Computer: " + computerSelection );
         console.log(playRound(playerSelection,computerSelection));
-        console.log(" PLAYER = " + playerScore + " COMPUTER = " + computerScore);  
+        console.log("your score = " + playerScore + " and the Computer's score = " + computerScore);  
     }
-    console.log("GAME OVER => " + " Your score = " + playerScore + " and the Computer's score = " + computerScore);
+    console.log("GAME OVER => " + " your score = " + playerScore + " and the Computer's score = " + computerScore);
     if (playerScore > computerScore) {
-        console.log("PLAYER WINS! COGRATULATIONS")
+        console.log("PLAYER WINS!")
     } else if (playerScore < computerScore) {
-        console.log("COMPUTER WINS! BETTER LUCK NEXT TIME")
+        console.log("COMPUTER WINS!")
     } else {
-        console.log("DRAW! TRY AGAIN")
+        console.log("DRAW!")
     }
 }
   

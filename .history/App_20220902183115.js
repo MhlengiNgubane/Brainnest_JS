@@ -62,9 +62,9 @@ function game() {
     }
     console.log("GAME OVER => " + " Your score = " + playerScore + " and the Computer's score = " + computerScore);
     if (playerScore > computerScore) {
-        console.log("PLAYER WINS! COGRATULATIONS")
+        console.log("PLAYER WINS! COGRATULATION")
     } else if (playerScore < computerScore) {
-        console.log("COMPUTER WINS! BETTER LUCK NEXT TIME")
+        console.log("COMPUTER WINS!")
     } else {
         console.log("DRAW! TRY AGAIN")
     }
