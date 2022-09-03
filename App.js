@@ -46,6 +46,9 @@ function playRound(playerSelection,computerSelection) {
             playerScore++;
             return "scissors wins. You beat the computer, nice job!";
         }
+    }
+    else {
+        return "please check your spelling or try again";
     }        
 }
 
