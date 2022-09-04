@@ -46,8 +46,8 @@ function game() {
           return "scissors wins. You beat the computer, nice job!";
         }
       } else {
-        i--;
-        return "invalid option";
+        i--
+        return "invalid option"; 
       }
     }
 

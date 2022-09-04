@@ -13,44 +13,44 @@ function computerPlay(computerChoice) {
   return computerChoice;
 }
 
+function playRound(playerSelection, computerSelection) {
+  if (playerSelection === computerSelection) {
+    return "It's a tie!";
+  } else if (playerSelection === "rock") {
+    if (computerSelection === "scissors") {
+      playerScore++;
+      return "rock wins. You beat the computer, nice job!";
+    } else {
+      computerScore++;
+      return "paper wins. computer beat you.";
+    }
+  } else if (playerSelection === "paper") {
+    if (computerSelection === "rock") {
+      playerScore++;
+      return "paper wins. You beat the computer, nice job!";
+    } else {
+      computerScore++;
+      return "scissors wins. computer beat you.";
+    }
+  } else if (playerSelection === "scissors") {
+    if (computerSelection === "rock") {
+      computerScore++;
+      return "rock wins. computer beat you.";
+    } else {
+      playerScore++;
+      return "scissors wins. You beat the computer, nice job!";
+    }
+  } else {
+    return "please check your spelling or try again";
+  }
+}
+
 function game() {
   for (let i = 0; i < 5; i++) {
     let playerChoice = prompt("Do you choose rock, paper or scissors?");
-    let playerSelection = playerChoice.toLowerCase();
-
-    function playRound(playerSelection, computerSelection) {
-      if (playerSelection === computerSelection) {
-        return "It's a tie!";
-      } else if (playerSelection === "rock") {
-        if (computerSelection === "scissors") {
-          playerScore++;
-          return "rock wins. You beat the computer, nice job!";
-        } else {
-          computerScore++;
-          return "paper wins. computer beat you.";
-        }
-      } else if (playerSelection === "paper") {
-        if (computerSelection === "rock") {
-          playerScore++;
-          return "paper wins. You beat the computer, nice job!";
-        } else {
-          computerScore++;
-          return "scissors wins. computer beat you.";
-        }
-      } else if (playerSelection === "scissors") {
-        if (computerSelection === "rock") {
-          computerScore++;
-          return "rock wins. computer beat you.";
-        } else {
-          playerScore++;
-          return "scissors wins. You beat the computer, nice job!";
-        }
-      } else {
-        i--;
-        return "invalid option";
-      }
-    }
-
+    playerChoice = playerChoice.toLowerCase();
+    while(player)
+    const playerSelection = playerChoice;
     const computerSelection = computerPlay();
     console.log("player: " + playerSelection);
     console.log("Computer: " + computerSelection);

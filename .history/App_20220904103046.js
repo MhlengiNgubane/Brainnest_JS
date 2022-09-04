@@ -13,6 +13,8 @@ function computerPlay(computerChoice) {
   return computerChoice;
 }
 
+
+
 function game() {
   for (let i = 0; i < 5; i++) {
     let playerChoice = prompt("Do you choose rock, paper or scissors?");
@@ -44,18 +46,48 @@ function game() {
         } else {
           playerScore++;
           return "scissors wins. You beat the computer, nice job!";
-        }
+        } 
       } else {
-        i--;
-        return "invalid option";
+        return "invalid option", i--
       }
+    }function playRound(playerSelection, computerSelection) {
+  if (playerSelection === computerSelection) {
+    return "It's a tie!";
+  } else if (playerSelection === "rock") {
+    if (computerSelection === "scissors") {
+      playerScore++;
+      return "rock wins. You beat the computer, nice job!";
+    } else {
+      computerScore++;
+      return "paper wins. computer beat you.";
     }
-
-    const computerSelection = computerPlay();
-    console.log("player: " + playerSelection);
-    console.log("Computer: " + computerSelection);
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(" PLAYER = " + playerScore + " COMPUTER = " + computerScore);
+  } else if (playerSelection === "paper") {
+    if (computerSelection === "rock") {
+      playerScore++;
+      return "paper wins. You beat the computer, nice job!";
+    } else {
+      computerScore++;
+      return "scissors wins. computer beat you.";
+    }
+  } else if (playerSelection === "scissors") {
+    if (computerSelection === "rock") {
+      computerScore++;
+      return "rock wins. computer beat you.";
+    } else {
+      playerScore++;
+      return "scissors wins. You beat the computer, nice job!";
+    } 
+  } else {
+    return "invalid option"; i--
+  }
+}
+    
+      const computerSelection = computerPlay();
+      console.log("player: " + playerSelection);
+      console.log("Computer: " + computerSelection);
+      console.log(playRound(playerSelection, computerSelection));
+      console.log(" PLAYER = " + playerScore + " COMPUTER = " + computerScore);
+    
   }
   console.log(
     "GAME OVER => " +
