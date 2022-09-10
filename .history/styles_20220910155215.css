@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    color: #F9FAF8;
+	font-size: 30px;
+    text-align: center;
+    background-color: #1F2937;
+}
+
+.hero {
+    display: flex;
+    height: 200px;
+    background-color: #1F2937;
+}
+.hero-left {
+    display: flex;
+    flex: 1;
+
+}
+.player-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-score, h3 {
+    flex:1;
+}
+.player-score, p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.player-hand {
+    transform: rotateY(180deg);
+  }
+.hero-right {
+    display: flex;
+    flex: 1;
+}
+.computer-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.computer-score, h3 {
+    flex:1;
+}
+.computer-score, p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.main-header {
+    color: #1F2937;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.options button {
+    height: 75px;
+    width:75px;
+}
+.options img {
+    height: 75px;
+    width:75px;
+}
+
+.results {
+    background-color: #E5E7EB;
+    height: 100px;
+    padding-left: 157px;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 0px;
+    padding-right: 157px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+blockquote {
+    justify-content: center;
+    align-items: center;
+    tec
+    margin: 0px 5px;
+    font-size: 16px;
+    font-family: italic;
+    font-weight: light;
+    color: #1F2937; 
+}
+footer {
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    color: #F9FAF8;
+	font-size: 30px;
+    text-align: center;
+    background-color: #1F2937;
+}
