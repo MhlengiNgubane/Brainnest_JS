@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    color: #F9FAF8;
+	font-size: 30px;
+    text-align: center;
+    background-color: #1F2937;
+}
+
+.hero {
+    display: flex;
+    height: 200px;
+    background-color: #1F2937;
+}
+.hero-left {
+    display: flex;
+    flex: 1;
+
+}
+.player-score, h3 {
+    flex:1;
+}
+.player-score, p {
+    flex:1;
+}
+
+.hero-right {
+    display: flex;
+    flex: 1;
+}
+.computer-score, h3 {
+    flex:1;
+}
+.computer-score, p {
+    flex: 1;
+}
+.main-header {
+    color: #1F2937;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+    width: 150; 
+    cursor
+}
