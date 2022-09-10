@@ -30,36 +30,23 @@ header {
     flex: 1;
 
 }
-.player-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .player-score, h3 {
     flex:1;
 }
 .player-score, p {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    flex:1;
 }
 
 .hero-right {
     display: flex;
     flex: 1;
 }
-.computer-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.hero-
 .computer-score, h3 {
     flex:1;
 }
 .computer-score, p {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    flex: 1;
 }
 .main-header {
     color: #1F2937;
@@ -70,27 +57,23 @@ header {
 }
 .buttons {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    
-    
+    justify-items: center;
+    height: 150px;
+    width: 150; 
+    cursor: pointer;
+    transition: 100ms;
 }
-.buttons button {
-    height: 75px;
-    width:75px;
-}
-.selection img {
-    height: 75px;
-    width:75px;
+.button img {
+    height: 150px;
+    width:150px;
 }
 
 .results {
     background-color: #E5E7EB;
     height: 100px;
     padding-left: 157px;
-    text-align: center;
-    justify-content: center;
-    margin: 25px 0px;
     padding-right: 157px;
     padding-top: 4px;
     padding-bottom: 4px;

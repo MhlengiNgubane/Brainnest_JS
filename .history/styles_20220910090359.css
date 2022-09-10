@@ -48,8 +48,9 @@ header {
     display: flex;
     flex: 1;
 }
-.computer-score {
+.comuter-score {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }

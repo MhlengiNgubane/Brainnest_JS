@@ -48,7 +48,7 @@ header {
     display: flex;
     flex: 1;
 }
-.computer-score {
+.comuter-score {
     display: flex;
     justify-content: center;
     align-items: center;

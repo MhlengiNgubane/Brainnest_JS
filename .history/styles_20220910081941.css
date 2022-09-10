@@ -35,23 +35,21 @@ header {
     justify-content: center;
     align-items: center;
 }
+.comuter-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .player-score, h3 {
     flex:1;
 }
 .player-score, p {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    flex:1;
 }
 
 .hero-right {
     display: flex;
     flex: 1;
-}
-.computer-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .computer-score, h3 {
     flex:1;

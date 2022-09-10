@@ -35,6 +35,11 @@ header {
     justify-content: center;
     align-items: center;
 }
+.comuter-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .player-score, h3 {
     flex:1;
 }
@@ -47,11 +52,6 @@ header {
 .hero-right {
     display: flex;
     flex: 1;
-}
-.computer-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .computer-score, h3 {
     flex:1;

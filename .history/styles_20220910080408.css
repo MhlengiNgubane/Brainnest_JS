@@ -31,35 +31,27 @@ header {
 
 }
 .player-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex
 }
 .player-score, h3 {
     flex:1;
 }
 .player-score, p {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    flex:1;
 }
 
 .hero-right {
     display: flex;
     flex: 1;
 }
-.computer-score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-right, img {
+
 }
 .computer-score, h3 {
     flex:1;
 }
 .computer-score, p {
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+    flex: 1;
 }
 .main-header {
     color: #1F2937;
