@@ -1,4 +1,5 @@
-
+function game() {
+  do {
 let playerScore = 0;
 let computerScore = 0;
 
@@ -86,9 +87,12 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
-function game() {  
-  
-  playMatch();
+
+    
+    playMatch()
+  }
+  while(playerScore !== 5 || computerScore !== 5 );
+
 };
 
 game();

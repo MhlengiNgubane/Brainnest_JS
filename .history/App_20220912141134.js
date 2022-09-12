@@ -86,9 +86,13 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
-function game() {  
+function game() {
+  playMatch()
   
-  playMatch();
+
+  }
+  while(playerScore !== 5 || computerScore !== 5 );
+
 };
 
 game();

@@ -87,7 +87,9 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 function game() {  
-  
+  for (playerScore === 5 || computerScore ===5 ) {
+    
+  }
   playMatch();
 };
 

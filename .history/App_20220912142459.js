@@ -87,8 +87,20 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 function game() {  
-  
   playMatch();
+  for (playerScore === 5 || computerScore ===5 ) {
+    if (playerScore === 5) {
+      
+      winner.textContent = "scissors wins. You beat the computer, nice job!";
+      return;
+    }
+    if (computerScore === 5) {
+      
+      winner.textContent = "scissors wins. You beat the computer, nice job!";
+      return;
+    }
+  }
+  
 };
 
 game();

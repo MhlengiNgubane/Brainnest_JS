@@ -86,9 +86,18 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
-function game() {  
+function game() {
+  playMatch()
   
-  playMatch();
+ if (playerScore === 5 || computerScore === 5) {
+ if (playerScore === 5) {
+  winner.textContent = "Congratulations, you have won!";
+  return;
+ } else {
+  winner.textContent = "computer wins. better luck next time";
+  return;
+ }
+}
 };
 
 game();

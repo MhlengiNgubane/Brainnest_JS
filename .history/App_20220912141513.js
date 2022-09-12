@@ -86,9 +86,12 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
-function game() {  
+function game() {
+  do {
+    
+    playMatch()
   
-  playMatch();
+
 };
 
 game();
