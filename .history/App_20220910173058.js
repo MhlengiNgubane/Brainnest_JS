@@ -89,14 +89,18 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   playMatch()
   if (playerScores == 5 || computerScores == 5) {
-    if (playerScores == 5) {
+    if (playerScores == 5)  {
       winner.textContent = `You won : ${playerScores}`;
-      return;
+      bre;
     } else if (computerScores == 5) {
       winner.textContent = `Computer won : ${computerScores}`;
       return;
-    } 
+    } else {
+      playRound();
+      return;
+    }
   }
+
 };
 
 game();

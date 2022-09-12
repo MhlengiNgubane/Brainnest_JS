@@ -95,8 +95,12 @@ function game() {
     } else if (computerScores == 5) {
       winner.textContent = `Computer won : ${computerScores}`;
       return;
-    } 
+    } else {
+      playRound();
+      return;
+    }
   }
+  
 };
 
 game();

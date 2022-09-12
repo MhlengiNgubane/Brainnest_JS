@@ -1,4 +1,4 @@
-
+function game() {
 let playerScore = 0;
 let computerScore = 0;
 
@@ -86,16 +86,18 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
-function game() {
   playMatch()
-  if (playerScores == 5 || computerScores == 5) {
+  if (playerScores  5 || computerScores == 5) {
     if (playerScores == 5) {
       winner.textContent = `You won : ${playerScores}`;
       return;
     } else if (computerScores == 5) {
       winner.textContent = `Computer won : ${computerScores}`;
       return;
-    } 
+    } else {
+      playRound();
+      return;
+    }
   }
 };
 
