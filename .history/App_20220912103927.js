@@ -87,12 +87,19 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 function game() {
-  do {
-    playMatch()
-    
+  playMatch()
+  if (playerScores == 5 || computerScores == 5) {
+    if (playerScores == 5) {
+      updateScore();
+      winner.textContent = `You won : ${playerScores}`;
+      return;
+    } else if (computerScores == 5) {
+      updateScore();
+      
+      winner.textContent = `Computer won : ${computerScores}`;
+      return;
+    } 
   }
-  while(playerScore !== 5 || computerScore !== 5 );
-
 };
 
 game();
